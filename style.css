@@ -1,0 +1,50 @@
+body {
+    font-family: sans-serif;
+}
+    
+#header {
+    border-bottom: .5rem solid LightSeaGreen;
+    background-color: dimgray;
+    height: 4rem;
+    border-bottom: 3rem;
+    border-bottom-color: LightSeaGreen;
+}    
+
+* {
+    margin: 0;
+}
+
+#about {
+    display: flex;
+    height: 23.5rem;
+}
+        
+#about h3 {
+    width: 10rem;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 1.5rem;
+    color: white;
+}
+    
+title{
+    height: 31rem;
+    background-color: lightgray;
+    text-align: center;
+}
+
+h3{
+    color: LightSeaGreen;
+    width: 18rem;
+    margin: center;
+    padding-top: 1.5rem;
+}
+
+#fav
+{
+    display: flex;
+    justify-content: space-evenly
+}
+
