@@ -4,7 +4,6 @@
 }
 
 body {
-    background: url("https://bit.ly/hw4aziza");
     opacity: .5;
     background-repeat: no-repeat;
 }
@@ -29,26 +28,27 @@ body {
 
 .box1 {
     flex-grow: 1;
-    flex-basis: 14.3%
+    flex-basis: 1000px;
 }
 
 .box2 {
     flex-grow: 1;
-    flex-basis: 25%;
+    flex-basis: 1000px;
 }
 
 .box3 {
-    flex-basis: 350px;
+    flex-basis: 600px;
 }
 
 .box4 {
     flex-grow: 1;
-    flex-basis: 1000px;
+    flex-basis: 400px;
 }
 
-.box5{
-    flex-basis: 800px;
+.box5 {
+    flex-basis: 500px;
 }
+
 .box6 {
-    flex-basis: 200px;
-} 
+    flex-basis: 500px;
+}
