@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Open Sans');
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('https://html.ink.kg/fonts/HelveticaNeueCyr-Roman.ttf')
+}
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(https://cdn.imgchest.com/files/b49zcb8j3yw.png);
+    background-repeat: no-repeat;
+    max-width: 1283px;
+    min-height: 1434px;
+    font-size: 2rem;
+    opacity: .5;
+    color: blue;
+}
+
+
+.container {
+    display: grid;
+    grid-template-rows: minmax(47px, auto) minmax(480px, auto) minmax(104px, auto) minmax(663px, auto) minmax(132px, auto);
+    grid-template-columns: minmax(100px, 223px) minmax(752px, 534px) minmax(427px, 92px);
+    grid-template-areas:
+        "one six six"
+        "two two two"
+        "three three three"
+        "four four seven"
+        "five five five";
+}
+
+
+.container>* {
+    border: 2px dashed blue;
+}
+
+
+
+.box6 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box6 ul {
+    font-family: 'OpenSans';
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    /* position vertically */
+    max-width: 100%;
+    min-height: 100%;
+    align-items: center;
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.box6 li{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* position horizontally */
+.rating {
+    flex-basis: 20px;
+    padding-left: 10px;
+}
+
+.join {
+    flex-basis: 20px;
+    padding-left: 18px;
+    margin: 4px
+}
+
+.profile {
+    flex-basis: 20px;
+    padding-left: 0px;
+    margin: 4px;
+}
+
+.search {
+    flex-basis: 20px;
+    margin: 0px;
+    padding-left: 0px;
+}
+
+.menu {
+    flex-basis: 20px;
+    padding-left: 6px;
+    margin: 2px;
+}
+
+.arrow {
+    flex-basis: 20px;
+    padding-left: 6px;
+    margin: 6px;
+}
+
+
+
+.box1 {
+    grid-area: one;
+}
+
+.box2 {
+    grid-area: two;
+}
+
+.box3 {
+    grid-area: three;
+}
+
+.box4 {
+    grid-area: four;
+}
+
+.box5 {
+    grid-area: five;
+}
+
+.box6 {
+    grid-area: six;
+}
+
+.box7 {
+    grid-area: seven;
+}
