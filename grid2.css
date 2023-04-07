@@ -21,7 +21,6 @@ body {
 }
 
 
-
 .container {
     display: grid;
     grid-template-rows: minmax(auto, 47px) minmax(480px, auto) minmax(104px, auto) minmax(663px, auto) minmax(132px, auto);
