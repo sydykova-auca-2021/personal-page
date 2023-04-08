@@ -10,16 +10,14 @@ html {
 }
 
 body {
-    background-image: url(https://cdn.imgchest.com/files/b49zcb8j3yw.png);
+    background-image: none;
+    opacity: 1;
     background-repeat: no-repeat;
     max-width: 1283px;
     min-height: 1434px;
     font-size: 2rem;
     color: blue;
-    opacity: .5;
-
 }
-
 
 .container {
     display: grid;
@@ -28,8 +26,8 @@ body {
 
 
     grid-template-areas:
-        "one six six"
-        "two two two"
+        "one one one"
+        "six two two"
         "three three three"
         "four four seven"
         "five five five";
@@ -63,7 +61,7 @@ body {
     font-size: 14px;
     grid-area: six;
     font-family: sans-serif;
-    /* background: #fff none repeat scroll 0 0; */
+    background: #fff;
 }
 
 .box7 {
@@ -71,36 +69,37 @@ body {
 }
 
 ul {
-    flex-wrap: wrap;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-family: 'OpenSans';
+    font-size: 1em;
+    font-weight: bold;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
     display: flex;
-    justify-content: flex-end;
-    float: right;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    flex-wrap: wrap;
+    background: white;
+    color: #333333;
     max-width: 100%;
     min-height: 100%;
     align-items: center;
-
-    font-family: 'OpenSans';
-
+    opacity: 0.3;
 }
+
 
 li {
-    margin-right: 21px;
-    line-height: 44px;
-    color: #333333;
-    font-size: 1em;
-    height: auto;
-    letter-spacing: 0.3px;
-    padding: 0 0 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 1px 1px 0px;
+    margin: 31px 1px 30px 1px;
+    border-bottom: 1px solid #333333;
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 2.2px;
 }
 
-
-.iconInHeader {
-    width: 16px;
-    height: 48px;
-}
 
 .iconInHeader .user {
     background-image: url(https://who.ca-news.org/uiall-img/whoiswho/userFilled.svg);
@@ -108,17 +107,16 @@ li {
 
 .iconInHeader .user,
 .iconInHeader .search,
-.doubleCaretDown {
+.doubleArrowDown {
     height: 16px;
-    /* position: absolute; */
     top: 33%;
     width: 28px;
     background-repeat: no-repeat;
     background-size: contain;
     margin-left: -2px;
-
-
     padding-left: 30px;
+    bottom: 5px;
+
 }
 
 .iconInHeader .search {
@@ -126,35 +124,10 @@ li {
 
 }
 
-.rating {
-    margin: -6px 20px 0px -3px;
-    padding-left: 2px;
-}
 
-.join {
-    margin: -6px 24px 0px -3px;
-    padding-left: 2px;
-}
-
-.user {
-    margin: 2px 20px 0px -3px;
-    padding-left: 2px;
-}
-
-.menu {
-    letter-spacing: 2.2px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: -2px 24px 0px -3px;
-}
-
-
-
-
-.doubleCaretDown {
+.doubleArrowDown {
     background-image: url(https://who.ca-news.org/uiall-img/whoiswho/doubleCaretDown.svg);
     height: 11px;
-    margin: 0px 0 0 19px;
     width: 10px;
 }
 

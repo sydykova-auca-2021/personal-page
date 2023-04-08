@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 6</title>
-    <link rel="stylesheet" href="grid2.css">   
+    <link rel="stylesheet" class="style" href="grid3.css">
 </head>
 <body>
+    <button onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
     <img src='https://cdn.imgchest.com/files/wye3cdnxp4b.png' style='position: absolute;
     top:0; left:0;z-index:-1'>
     
@@ -25,17 +26,18 @@
                     <div class="iconInHeader"><span class="user"></span></div>
                 </a></li>
                 
-                <li class="searching">
-                    <div class="iconInHeader">
+                <li class="searching"><div class="iconInHeader">
                         <a href="#"><span class="search"></span></a>
-                        					</div>
+                </div>
                 </li>
+                
                 <li class="menu"><div class="iconInHeader">
                     <span class="boldmenu">MENU</span>
                 </div>
                 </li>
+                
                 <li class="arrow"><div class="iconInHeader">
-                    <span class="doubleCaretDown"></span>
+                    <span class="doubleArrowDown"></span>
                 </div>
                 </li>
             </ul>
@@ -43,6 +45,16 @@
         </div>
         <div class="box7">7</div>
     </div>
-</body>
+    <script>
+        function switchStyle() {
+            let style = document.querySelector('.style');
+            if (style.getAttribute('href') == 'grid3.css') {
+                style.setAttribute('href', 'grid2.css');
+            } else {
+                style.setAttribute('href', 'grid3.css');
+            }
+        }
+        </script>
+    </body> 
 </html>
 
