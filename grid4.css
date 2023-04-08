@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Open Sans');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    display: block;
+}
+
+body {
+    background-image: none;
+    opacity: 1;
+    background-repeat: no-repeat;
+    max-width: 1283px;
+    min-height: 1434px;
+    font-size: 2rem;
+    color: blue;
+}
+
+body > img:nth-of-type(1) {
+    display: none;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: minmax(auto, 47px) minmax(480px, auto) minmax(104px, auto) minmax(663px, auto) minmax(132px, auto);
+    grid-template-columns: minmax(20px, 100px) minmax(20px, 752px) minmax(20px, 427px);
+
+
+    grid-template-areas:
+        "one one one"
+        "six two two"
+        "four three three"
+        "four seven seven"
+        "five five five";
+}
+
+.container>* {
+    border: 2px dashed blue;
+}
+
+.Logo {
+    grid-area: one;
+}
+
+.Logo img{
+    max-width: 90%;
+}
+
+.Hero {
+    grid-area: two;
+    background-image: url('https://th.bing.com/th/id/OIG.OemMfN3Z7XlFNUIr_bB9?pid=ImgGn');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Hero h1{
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+
+.FlexBoxLayout1 {
+    grid-area: three;
+}
+
+.LeftSideBar {
+    grid-area: four;
+}
+
+.box5 {
+    grid-area: five;
+}
+
+.Menu {
+    font-size: 14px;
+    grid-area: six;
+    font-family: sans-serif;
+    background: #fff;
+}
+
+.FlexBoxLayout2 {
+    grid-area: seven;
+}
+
+ul {
+    flex-direction: column;
+    text-transform: uppercase;
+    font-family: 'OpenSans';
+    font-size: 1em;
+    font-weight: bold;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    color: #333333;
+    max-width: 100%;
+    min-height: 100%;
+    align-items: center;
+    opacity: 0.3;
+}
+
+
+li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 1px 1px 0px;
+    margin: 31px 1px 30px 1px;
+    border-bottom: 1px solid #333333;
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 2.2px;
+}
+
+
+.iconInHeader .user {
+    background-image: url(https://who.ca-news.org/uiall-img/whoiswho/userFilled.svg);
+}
+
+.iconInHeader .user,
+.iconInHeader .search,
+.doubleArrowDown {
+    height: 16px;
+    top: 33%;
+    width: 28px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: -2px;
+    padding-left: 30px;
+    bottom: 5px;
+
+}
+
+.iconInHeader .search {
+    background-image: url(https://who.ca-news.org/uiall-img/whoiswho/searchIcon.svg);
+
+}
+
+
+.doubleArrowDown {
+    background-image: url(https://who.ca-news.org/uiall-img/whoiswho/doubleCaretDown.svg);
+    height: 11px;
+    width: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .grid-container {
+        grid-template-rows: minmax(47px, auto) minmax(480px, auto) minmax(104px, auto) minmax(663px, auto) minmax(132px, auto);
+        grid-template-columns: minmax(20px, 100px) minmax(20px, 752px) minmax(20px, 427px);
+    }
+}
+
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: minmax(20px, 100px) minmax(20px, 752px);
+        grid-template-areas:
+            "one one"
+            "six two"
+            "four three"
+            "four seven"
+            "five five"
+    }
+}
