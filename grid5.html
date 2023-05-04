@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 9</title>
+    <link rel="stylesheet" class="style" href="grid5.css">
+</head>
+
+<body>
+    <button onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
+    <img src='https://cdn.imgchest.com/files/wye3cdnxp4b.png' style='position: absolute;
+    top:0; left:0;z-index:-1'>
+
+    <div class="container">
+        <div class="Logo">1
+            <img src="https://translate.google.com/translate?sl=auto&tl=en&hl=en-US&u=https://who.ca-news.org&client=webapp"
+                alt="who.ca-news">
+        </div>
+        <div class="Hero">
+            <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+        </div>
+        <div class="FlexBoxLayout1">3</div>
+        <div class="LeftSideBar">4</div>
+        <div class="box5">5</div>
+        <div class="Menu">
+            <ul>
+                <li class="rating">
+                    <div>Rating</div>
+                </li>
+                <li class="join">
+                    <div>Join</div>
+                </li>
+                <li class="user"><a href="#">
+                        <div class="iconInHeader"><span class="user"></span></div>
+                    </a></li>
+
+                <li class="searching">
+                    <div class="iconInHeader">
+                        <a href="#"><span class="search"></span></a>
+                    </div>
+                </li>
+
+                <li class="menu">
+                    <div class="iconInHeader">
+                        <span class="boldmenu">MENU</span>
+                    </div>
+                </li>
+
+                <li class="arrow">
+                    <div class="iconInHeader">
+                        <span class="doubleArrowDown"></span>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <div class="FlexBoxLayout2">7</div>
+
+    </div>
+    <script>
+        function switchStyle() {
+            let style = document.querySelector('.style');
+            if (style.getAttribute('href') == 'grid4.css') {
+                style.setAttribute('href', 'grid2.css');
+            } else {
+                style.setAttribute('href', 'grid4.css');
+            }
+        }
+    </script>
+</body>
+
+</html>
