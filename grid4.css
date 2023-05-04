@@ -51,16 +51,16 @@ body > img:nth-of-type(1) {
 
 .Hero {
     grid-area: two;
+    color: white;
     background-image: url('https://th.bing.com/th/id/OIG.OemMfN3Z7XlFNUIr_bB9?pid=ImgGn');
-    background-size: cover;
-    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-blend-mode: multiply;
+    background-color: grey; 
 }
 
 .Hero h1{
-    color: white;
     margin: 0;
     text-align: center;
 }
@@ -116,7 +116,7 @@ li {
     padding: 0px 1px 1px 0px;
     margin: 31px 1px 30px 1px;
     border-bottom: 1px solid #333333;
-    color: red;
+    color: #333333;
     text-transform: uppercase;
     letter-spacing: 2.2px;
 }
