@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open Sans');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 * {
     margin: 0;
     box-sizing: border-box;
@@ -17,7 +17,6 @@ body {
     font-size: 2rem;
     color: blue;
     opacity: .5;
-
 }
 
 .container {
@@ -146,7 +145,7 @@ li {
 
 
 .doubleArrowDown {
-    background-image: url(https://who.ca-news.org/uiall-img/whoiswho/doubleCaretDown.svg);
+    background-image: url(images/doubleCaretDown.svg);
     height: 11px;
     margin: 0px 0 0 19px;
     width: 10px;
@@ -164,11 +163,162 @@ li {
     .container {
         grid-template-columns: minmax(20px, 100px) minmax(20px, 752px);
         grid-template-areas:
-            "one six"
-            "two two"
-            "three three"
-            "four four"
-            "seven seven"
-            "five five";
+            "one"
+            "two"
+            "three"
+            "four"
+            "seven"
+            "five";
     }
+}
+
+.header>.Logo>img {
+    margin-left: -9px;
+    height: 47px;
+    vertical-align: top;
+}
+
+.blockreg {
+    display: inline-block;
+    width: 49%;
+    margin: 6px -15px 15px -4px;
+    vertical-align: top;
+}
+
+.blockreg>.photo {
+    margin-right: -5px;
+    float: left;
+    width: 133px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: 14px;
+}
+
+.blockreg>.people_info {
+    margin-left: 20px;
+    float: left;
+    width: 57%;
+}
+
+.name {
+    letter-spacing: 0.2px;
+    line-height: 23.2px;
+    margin-top: -1px;
+}
+
+.post{
+    line-height: 20px;
+    margin-top: -5px;
+    margin-left: -3px;
+    width: 220px;
+ 
+}
+
+
+
+.blockreg>.people_info>.name {
+    color: #194967;
+    font-weight: bold;
+    font-family: "roboto";
+    font-size: 16px;
+}
+
+.blockreg>.people_info>.people_date {
+    margin: -5px 0px 12px 0px;
+}
+
+.blockreg>.people_info>.people_date>.date {
+    background: #97ccd3;
+    color: #fff;
+    display: inline-block;
+    font-size: 10px;
+    letter-spacing: 0.075em;
+    padding: 2px 5px;
+}
+
+.blockreg>.people_info>.people_date>.field {
+    color: #194967;
+    font-size: 12px;
+}
+
+.blockreg>.people_info>.post {
+    color: #5c5c5c;
+    font-size: 14px;
+}
+
+.catalogList {
+    background: #fff;
+    padding: 20px 40px;
+}
+
+.popular-news h2.title {
+    letter-spacing: 0.9px;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    color: #2d2a3b;
+    border-bottom: 1px solid #c2c2c2;
+    padding: 10px 0;
+    margin: 19px 0px 0px 41px;
+}
+
+.inode_menu>li {
+    padding: 8.8px 0;
+    border-bottom: 1px solid #b4b4b4;
+    margin: 0;
+    text-transform: initial;
+    line-height: normal;
+    width: 95%;
+    align-items: flex-start;
+    margin-left: 21px;
+    margin-right: 30px;
+    letter-spacing: 0.1px;
+}
+
+.inode_menu {
+    list-style: none;
+    margin: 0;
+    float: left;
+    margin-left: 18px;
+    padding: 0;
+    width: 94%;
+}
+
+.inode_menu>li:last-child {
+    border-bottom: none;
+}
+
+.FlexBoxLayout2 {
+    font-size: 14px;
+}
+
+span.field {
+    margin-left: -4px;
+}
+
+.field2 {
+    margin-left: -8px;
+    color: #194967;
+    font-size: 12px;
+}
+
+.name2 {
+    letter-spacing: 0.06px;
+    margin-left: -3px;
+    color: #194967;
+    font-weight: bold;
+    font-family: "roboto";
+    font-size: 16px;
+    line-height: 23.2px;
+    margin-top: -1px;
+}
+
+.post1 {
+    color: #5c5c5c;
+    font-size: 14px !important;
+    line-height: 20px;
+    margin-top: -5px;
+    margin-left: 0px;
+    width: 220px;
 }

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open Sans');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 * {
     margin: 0;
     box-sizing: border-box;
@@ -23,6 +23,9 @@ body > img:nth-of-type(1) {
     display: none;
 }
 
+a{
+    text-decoration: none;
+}
 .container {
     display: grid;
     grid-template-rows: minmax(auto, 47px) minmax(480px, auto) minmax(104px, auto) minmax(663px, auto) minmax(132px, auto);
