@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css?family=Open Sans');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    display: block;
+}
+
+body {
+    background-image: none;
+    opacity: 1;
+    background-repeat: no-repeat;
+    max-width: 1283px;
+    min-height: 1434px;
+    font-size: 2rem;
+
+}
+
+body>img:nth-of-type(1) {
+    display: none;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: minmax(auto, 47px) minmax(480px, auto) minmax(104px, auto) minmax(663px, auto) minmax(132px, auto);
+    grid-template-columns: minmax(20px, 100px) minmax(20px, 752px) minmax(20px, 427px);
+
+
+    grid-template-areas:
+        "one one one"
+        "six two two"
+        "three three three"
+        "seven seven seven"
+        "four four four"
+        "five five five";
+}
+
+.container>* {
+    border: 2px dashed blue;
+}
+
+.Logo {
+    grid-area: one;
+}
+
+.Logo img {
+    max-width: 90%;
+}
+
+.Hero {
+    grid-area: two;
+    color: white;
+    background-image: url('https://th.bing.com/th/id/OIG.OemMfN3Z7XlFNUIr_bB9?pid=ImgGn');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-blend-mode: multiply;
+    background-color: grey;
+}
+
+.Hero h1 {
+    margin: 0;
+    text-align: center;
+}
+
+
+.FlexBoxLayout1 {
+    grid-area: three;
+}
+
+.LeftSideBar {
+    grid-area: four;
+}
+
+.box5 {
+    grid-area: five;
+}
+
+.Menu {
+    font-size: 14px;
+    grid-area: six;
+    font-family: sans-serif;
+    background: #fff;
+}
+
+.FlexBoxLayout2 {
+    grid-area: seven;
+}
+
+ul {
+    flex-direction: column;
+    text-transform: uppercase;
+    font-family: 'OpenSans';
+    font-size: 1em;
+    font-weight: bold;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    color: #333333;
+    max-width: 100%;
+    min-height: 100%;
+    align-items: center;
+    opacity: 0.3;
+}
+
+
+li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 1px 1px 0px;
+    margin: 31px 1px 30px 1px;
+    border-bottom: 1px solid #333333;
+    color: #333333;
+    text-transform: uppercase;
+    letter-spacing: 2.2px;
+}
+
+
+.iconInHeader .user {
+    background-image: url(https://who.ca-news.org/uiall-img/whoiswho/userFilled.svg);
+}
+
+.iconInHeader .user,
+.iconInHeader .search,
+.doubleArrowDown {
+    height: 16px;
+    top: 33%;
+    width: 28px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: -2px;
+    padding-left: 30px;
+    bottom: 5px;
+
+}
+
+.iconInHeader .search {
+    background-image: url(https://who.ca-news.org/uiall-img/whoiswho/searchIcon.svg);
+
+}
+
+
+.doubleArrowDown {
+    background-image: url(https://who.ca-news.org/uiall-img/whoiswho/doubleCaretDown.svg);
+    height: 11px;
+    width: 10px;
+}
+
+
+.popular-news h2.title {
+    font-size: 16px;
+    letter-spacing: 0.9px;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    color: #2d2a3b;
+    border-bottom: 1px solid #c2c2c2;
+    padding: 0px 40px;
+    margin: 19px 0px -10px 40px;
+}
+
+
+
+.people-block {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.people-block>div {
+
+    min-width: 385px;
+    margin: 10px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 12px;
+    border: 2px solid #e8e7e8ff;
+
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.flex-container>div {
+    box-shadow: 8px 8px 5px #6f6f6f;
+    background-color: #f1f1f1;
+    width: 190px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+
+}
+
+.box {
+    border-radius: 20px;
+    width: 200px;
+    display: grid;
+}
+
+.pic{
+    border-radius: 20px;
+}
+
+.pic1 {
+    border-radius: 20px;
+    background-image: url('./photos/1.png');
+    background-size: cover;
+    width: 190px;
+    height: 190px;
+}
+.pic2 {
+    border-radius: 20px;
+    background-image: url('./photos/2.png');
+    background-size: cover;
+    width: 190px;
+    height: 190px;
+}
+.pic3 {
+    border-radius: 20px;
+    background-image: url('./photos/3.png');
+    background-size: cover;
+    width: 190px;
+    height: 190px;
+}
+.pic4 {
+    border-radius: 20px;
+    background-image: url('./photos/4.png');
+    background-size: cover;
+    width: 190px;
+    height: 190px;
+}
+.pic5 {
+    border-radius: 20px;
+    background-image: url('./photos/5.png');
+    background-size: cover;
+    width: 190px;
+    height: 190px;
+}
+.pic6 {
+    border-radius: 20px;
+    background-image: url('./photos/6.png');
+    background-size: cover;
+    width: 190px;
+    height: 190px;
+}
+.pic7 {
+    border-radius: 20px;
+    background-image: url('./photos/7.png');
+    background-size: cover;
+    width: 190px;
+    height: 190px;
+}
+.pic8 {
+    border-radius: 20px;
+    background-image: url('./photos/8.png');
+    background-size: cover;
+    width: 190px;
+    height: 190px;
+}
+.pic9 {
+    border-radius: 20px;
+    background-image: url('./photos/9.png');
+    background-size: cover;
+    width: 190px;
+    height: 190px;
+}
+.pic10 {
+    border-radius: 20px;
+    background-image: url('./photos/10.png');
+    background-size: cover;
+    width: 190px;
+    height: 190px;
+}
+.pic11 {
+    border-radius: 20px;
+    background-image: url('./photos/11.png');
+    background-size: cover;
+    width: 190px;
+    height: 190px;
+}
+.pic12 {
+    border-radius: 20px;
+    background-image: url('./photos/12.png');
+    background-size: cover;
+    width: 190px;
+    height: 190px;
+}
+.pic13 {
+    border-radius: 20px;
+    background-image: url('./photos/13.png');
+    background-size: cover;
+    width: 190px;
+    height: 190px;
+}
+.pic14 {
+    border-radius: 20px;
+    background-image: url('./photos/14.png');
+    background-size: cover;
+    width: 190px;
+    height: 190px;
+}
+.pic15 {
+    border-radius: 20px;
+    background-image: url('./photos/15.png');
+    background-size: cover;
+    width: 190px;
+    height: 190px;
+}
+.pic16 {
+    border-radius: 20px;
+    background-image: url('./photos/16.png');
+    background-size: cover;
+    width: 190px;
+    height: 190px;
+}
+.pic17 {
+    border-radius: 20px;
+    background-image: url('./photos/17.png');
+    background-size: cover;
+    width: 190px;
+    height: 190px;
+}
+
+.box>* {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    color: white;
+}
+
+.box>* {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box>div>img {
+    filter: brightness(50%);
+    z-index: 0;
+}
+
+.caption {
+    font-family: 'Roboto';
+    font-size: 16px;
+    z-index: 1;
+    line-height: normal;
+}
+
+
+.photo {
+    margin: 0 auto;
+    background-size: cover;
+    width: 133px;
+    height: 200px;
+}
+
+.blockreg>.people_info>a>.name {
+    padding-top: 10px;
+    color: #194967;
+    font-weight: bold;
+    font-family: "roboto";
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.post {
+    color: #5c5c5c;
+    font-family: "roboto";
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: -5px;
+    width: 190px;
+}
+
+.date {
+    background: #58bdc7;
+    color: #fff;
+    display: inline-block;
+    font-size: 10px;
+    letter-spacing: 1.2px;
+    padding: 2px 5px;
+}
+
+.field {
+    font-family: "roboto";
+    color: #194967;
+    font-size: 12px;
+}
+
+.people_date {
+    padding: 10px 0px 10px 0px;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .grid-container {
+        grid-template-rows: minmax(47px, auto) minmax(480px, auto) minmax(104px, auto) minmax(663px, auto) minmax(132px, auto);
+        grid-template-columns: minmax(20px, 100px) minmax(20px, 752px) minmax(20px, 427px);
+    }
+}
+
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "one"
+            "two"
+            "three"
+            "four"
+            "five"
+            "six"
+            "seven"
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .item {
+        flex-basis: auto;
+
+    }
+
+    .people-block {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .people-block>div {
+        min-width: 200px;
+    }
+
+}

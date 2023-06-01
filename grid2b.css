@@ -16,9 +16,12 @@ body {
     min-height: 1434px;
     font-size: 2rem;
     color: blue;
-    opacity: .5;
-}
+    /* opacity: .5; */
 
+}
+a{
+    text-decoration: none !important;
+}
 .container {
     display: grid;
     grid-template-rows: minmax(auto, 47px) minmax(480px, auto) minmax(104px, auto) minmax(663px, auto) minmax(132px, auto);
@@ -163,12 +166,12 @@ li {
     .container {
         grid-template-columns: minmax(20px, 100px) minmax(20px, 752px);
         grid-template-areas:
-            "one"
-            "two"
-            "three"
-            "four"
-            "seven"
-            "five";
+            "one six"
+            "two two"
+            "three three"
+            "four four"
+            "seven seven"
+            "five five";
     }
 }
 
@@ -218,19 +221,19 @@ li {
 
 
 
-.blockreg>.people_info>.name {
+.blockreg>.people_info>a>.name {
     color: #194967;
     font-weight: bold;
     font-family: "roboto";
     font-size: 16px;
 }
 
-.blockreg>.people_info>.people_date {
+.blockreg>.people_info>a>.people_date {
     margin: -5px 0px 12px 0px;
 }
 
-.blockreg>.people_info>.people_date>.date {
-    background: #97ccd3;
+.blockreg>.people_info>a>.people_date>.date {
+    background: #58bdc7;
     color: #fff;
     display: inline-block;
     font-size: 10px;
@@ -238,14 +241,14 @@ li {
     padding: 2px 5px;
 }
 
-.blockreg>.people_info>.people_date>.field {
+.blockreg>.people_info>a>.people_date>.field {
     color: #194967;
     font-size: 12px;
 }
 
-.blockreg>.people_info>.post {
+.blockreg>.people_info>a>.post {
     color: #5c5c5c;
-    font-size: 14px;
+    font-size: 14px !important;
 }
 
 .catalogList {
@@ -261,6 +264,25 @@ li {
     border-bottom: 1px solid #c2c2c2;
     padding: 10px 0;
     margin: 19px 0px 0px 41px;
+}
+
+.doubleCaretDown {
+    background-image: url(images/doubleCaretDown.svg);
+    height: 10px;
+    margin: 3px 0 0 7px;
+    width: 10px;
+    cursor: pointer;
+}
+
+.countryList {
+    position: absolute;
+    display: none;
+    background: #337ab7;
+    padding: 25px;
+}
+
+.countryName {
+    margin: 10px 0;
 }
 
 .inode_menu>li {
@@ -282,7 +304,17 @@ li {
     float: left;
     margin-left: 18px;
     padding: 0;
+    opacity: unset;
     width: 94%;
+}
+
+
+.intree {
+
+    padding: 5px 10px;
+    position: absolute;
+    display: none;
+    margin-left: 50px;
 }
 
 .inode_menu>li:last-child {
