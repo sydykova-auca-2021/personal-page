@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css?family=Open Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    display: block;
+}
+
+body {
+    background-image: url(https://cdn.imgchest.com/files/b49zcb8j3yw.png);
+    background-repeat: no-repeat;
+    max-width: 1283px;
+    min-height: 1434px;
+    font-size: 2rem;
+    color: blue;
+    /* opacity: .5; */
+
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: minmax(auto, 47px) minmax(480px, auto) minmax(104px, auto) minmax(663px, auto) minmax(132px, auto);
+    grid-template-columns: minmax(20px, 100px) minmax(20px, 752px) minmax(20px, 427px);
+
+
+    grid-template-areas:
+        "one six six"
+        "two two two"
+        "three three three"
+        "four four seven"
+        "five five five";
+}
+
+.container>* {
+    border: 2px dashed blue;
+}
+
+.Logo>img {
+    width: 46px;
+    margin-left: -7px;
+    grid-area: one;
+}
+
+.buttonMenu {
+    display: none;
+}
+
+
+.Hero {
+    
+    grid-area: two;
+}
+
+.FlexBoxLayout1 {
+    grid-area: three;
+}
+
+.LeftSideBar {
+    grid-area: four;
+}
+
+.box5 {
+    grid-area: five;
+}
+
+.Menu {
+    font-size: 14px;
+    grid-area: six;
+    font-family: sans-serif;
+    background: #fff none repeat scroll 0 0;
+}
+
+.FlexBoxLayout2 {
+    grid-area: seven;
+}
+
+ul {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    min-height: 100%;
+    align-items: center;
+    font-family: 'OpenSans';
+}
+
+
+li {
+    margin-right: 21px;
+    line-height: 44px;
+    color: #333333;
+    font-size: 1em;
+    height: auto;
+    letter-spacing: 0.3px;
+    padding: 0 0 2px;
+}
+
+
+.iconInHeader {
+    width: 16px;
+    height: 48px;
+}
+
+.iconInHeader .user {
+    background-image: url(https://who.ca-news.org/uiall-img/whoiswho/userFilled.svg);
+}
+
+.iconInHeader .user,
+.iconInHeader .search,
+.doubleArrowDown {
+    height: 16px;
+    top: 33%;
+    width: 28px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: -2px;
+    padding-left: 30px;
+}
+
+.iconInHeader .search {
+    background-image: url(https://who.ca-news.org/uiall-img/whoiswho/searchIcon.svg);
+
+}
+
+.rating {
+    margin: -6px 20px 0px -3px;
+    padding-left: 2px;
+}
+
+.join {
+    margin: -6px 24px 0px -3px;
+    padding-left: 2px;
+}
+
+.user {
+    margin: 2px 20px 0px -3px;
+    padding-left: 2px;
+}
+
+.menu {
+    letter-spacing: 2.2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: -2px 24px 0px -3px;
+}
+
+
+
+.doubleArrowDown {
+    background-image: url(images/doubleCaretDown.svg);
+    height: 11px;
+    margin: 0px 0 0 19px;
+    width: 10px;
+}
+
+.caption {
+    margin-top: -17.01px;
+}
+
+.buttonMenu {
+  display: none;
+}
+
+
+.flex-container3 {
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-wrap: nowrap;
+    
+  }
+  
+  .flex-container3 > div {
+    
+    text-align: left;
+    line-height: 18px;
+    font-size: 12.5px;
+  }
+  .ft1{
+    flex:1 1 0;
+
+  }
+
+  .ft2{
+    
+    flex:3 1 0;
+    margin: 42px 0px 0px 67px !important;
+
+  }
+
+  .ft3{
+    flex:1 1 0;
+    margin: 41px 0px 0px -307px;
+
+  }
+
+  img.footericon {
+        width: 60%;
+        margin: 27px 0px 0px 69px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .grid-container {
+        grid-template-rows: minmax(47px, auto) minmax(480px, auto) minmax(104px, auto) minmax(663px, auto) minmax(132px, auto);
+        grid-template-columns: minmax(20px, 100px) minmax(20px, 752px) minmax(20px, 427px);
+    }
+}
+
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: minmax(20px, 100px) minmax(20px, 752px);
+        grid-template-areas:
+            "one six"
+            "two two"
+            "three three"
+            "four four"
+            "seven seven"
+            "five five";
+    }
+
+    img.footericon {
+        width: 16%;
+        margin: 27px 0px 0px 69px;
+}
+
+.ft3 {
+    margin: 0px 0px 0px 68px;
+}
+
+    .flex-container3{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .Menu {
+        display: none;
+    }
+
+    .buttonMenu {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 50px;
+    }
+
+    .Menu.mobileMenu {
+        display: block;
+        position: fixed;
+        top: 50px;
+        right: 0;
+    }
+}
+
+
+.header>.Logo>img {
+    margin-left: -9px;
+    height: 47px;
+    vertical-align: top;
+}
+
+.blockreg {
+    display: inline-block;
+    width: 49%;
+    margin: 6px -15px 15px -4px;
+    vertical-align: top;
+}
+
+.blockreg>.photo {
+    margin-right: -5px;
+    float: left;
+    width: 133px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: 14px;
+}
+
+.blockreg>.people_info {
+    margin-left: 20px;
+    float: left;
+    width: 57%;
+}
+
+.name {
+    letter-spacing: 0.2px;
+    line-height: 23.2px;
+    margin-top: -1px;
+}
+
+.post {
+    line-height: 20px;
+    margin-top: -5px;
+    margin-left: -3px;
+    width: 220px;
+
+}
+
+.postText {
+    color: #5c5c5c;
+    font-size: 14px !important;
+    line-height: 20px;
+    margin-top: -5px;
+    margin-left: 0px;
+    width: 220px;
+}
+
+
+
+
+.blockreg>.people_info>a>.name {
+    color: #194967;
+    font-weight: bold;
+    font-family: "roboto";
+    font-size: 16px;
+}
+
+.blockreg>.people_info>a>.people_date {
+    margin: -5px 0px 12px 0px;
+}
+
+.blockreg>.people_info>a>.people_date>.date {
+    background: #58bdc7;
+    color: #fff;
+    display: inline-block;
+    font-size: 10px;
+    letter-spacing: 0.075em;
+    padding: 2px 5px;
+}
+
+.blockreg>.people_info>a>.people_date>.field {
+    color: #194967;
+    font-size: 12px;
+}
+
+.blockreg>.people_info>a>.post {
+    color: #5c5c5c;
+    font-size: 14px !important;
+}
+
+.catalogList {
+    background: #fff;
+    padding: 20px 40px;
+}
+
+.popular-news h2.title {
+    letter-spacing: 0.9px;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    color: #2d2a3b;
+    border-bottom: 1px solid #c2c2c2;
+    padding: 10px 0;
+    margin: 19px 0px 0px 41px;
+}
+
+.doubleCaretDown {
+    background-image: url(images/doubleCaretDown.svg);
+    height: 10px;
+    margin: 3px 0 0 7px;
+    width: 10px;
+    cursor: pointer;
+}
+
+.countryList {
+    position: absolute;
+    display: none;
+    background: #337ab7;
+    padding: 25px;
+}
+
+.countryName {
+    margin: 10px 0;
+}
+
+.inode_menu>li {
+    padding: 8.8px 0;
+    border-bottom: 1px solid #b4b4b4;
+    margin: 0;
+    text-transform: initial;
+    line-height: normal;
+    width: 95%;
+    align-items: flex-start;
+    margin-left: 21px;
+    margin-right: 30px;
+    letter-spacing: 0.1px;
+}
+
+.inode_menu {
+    list-style: none;
+    margin: 0;
+    float: left;
+    margin-left: 18px;
+    padding: 0;
+    opacity: unset;
+    width: 94%;
+}
+
+
+.intree {
+
+    padding: 5px 10px;
+    position: absolute;
+    display: none;
+    margin-left: 50px;
+}
+
+.inode_menu>li:last-child {
+    border-bottom: none;
+}
+
+.FlexBoxLayout2 {
+    font-size: 14px;
+}
+
+span.field {
+    margin-left: -4px;
+}
+
+.field2 {
+    margin-left: -8px !important;
+    color: #194967;
+    font-size: 12px;
+}
+
+.name2 {
+    letter-spacing: 0.06px;
+    margin-left: -3px;
+    color: #194967;
+    font-weight: bold;
+    font-family: "roboto";
+    font-size: 16px;
+    line-height: 23.2px;
+    margin-top: -1px;
+}
+
+.post1 {
+    color: #5c5c5c;
+    font-size: 14px !important;
+    line-height: 20px;
+    margin-top: -5px;
+    margin-left: 0px;
+    width: 220px;
+}
